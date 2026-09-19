@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePlusHospital</title>
+    <link rel="icon" type="image/png" href="medical-symbol.png">
+</head>
+<style>
+    body
+    {
+        padding: 0;
+        margin: 0;
+    }
+    nav li
+    {
+        list-style: none;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+
+    }
+    nav
+    {
+        background-color: rgb(0, 166, 255);
+        padding: 20px;
+    }
+    nav a
+    {
+        
+        box-shadow: 1px 1px 10px;
+        padding: 10px;
+        color: white;
+        border-radius: 50px;
+    }
+    .full 
+    {
+        display: flex;
+        gap: 100px;
+        margin-top: 50px;
+        text-align: center;
+        justify-content: center;
+    }
+    .heart>img
+    {
+        width: 50px;
+    }
+    .heart
+    {
+        box-shadow: 1px 1px 4px grey;
+        border-radius: 5px;
+        padding: 20px;
+        transition: 1s;
+    }
+    .heart:hover
+    {
+        transform: translateY(-5px);
+    }
+    .neuro>img
+    {
+        width: 50px;
+    }
+    .neuro
+    {
+        box-shadow: 1px 1px 4px grey;
+        padding: 20px;
+        transition: 1s;
+        border-radius: 5px;
+    }
+    .neuro:hover
+    {
+        transform: translateY(-5px);
+    }
+    .ortho>img
+    {
+        width: 50px;
+    }
+    .ortho
+    {
+        box-shadow: 1px 1px 4px grey;
+        padding: 20px;
+        transition: 1s;
+        border-radius: 5px;
+    }
+    .ortho:hover
+    {
+        transform: translateY(-5px);
+    }
+    .pre>img
+    {
+        width: 50px;
+    }
+    .pre
+    {
+        box-shadow: 1px 1px 4px grey;
+        padding: 20px;
+        transition: 1s;
+        border-radius: 5px;
+    }
+    .pre:hover
+    {
+        transform: translateY(-5px);
+    }
+    a
+    {
+        text-decoration: none;
+        color: blue;
+    }
+    h1
+    {
+        margin-left: 10px;
+    }
+    @media screen and (max-width:600px)
+    {
+        .full
+        {
+            display: grid;
+        }
+    }
+
+
+</style>
+<body>
+    <nav>
+         <a href="index.html">---Back</a>
+        <li>Department</li>
+    </nav>
+   
+    <h1>Our Department</h1>
+    <div class="full">
+       <!-- first slide -->
+      <div class="heart">
+       <img src="heart-rate.png" alt="">
+       <h3>Cardiology</h3>
+       <p>Comprehensive cardiac
+        <br>
+          care for a healthy heart.</p>
+          <a href="#">Learn More --- </a>
+      </div>
+      <!-- second slide -->
+      <div class="neuro">
+       <img src="human-brain.png" alt="">
+       <h3>Neurology</h3>
+       <p>Expert care for brain,
+        <br>
+          spine & nervous system.</p>
+          <a href="#">Learn More --- </a>
+      </div>
+      <!-- third slide -->
+       <div class="ortho">
+       <img src="bones.png" alt="">
+       <h3>Orthopedics</h3>
+       <p>Advanced treatment for
+        <br>
+          bones & joints.</p>
+          <a href="#">Learn More --- </a>
+      </div>
+      <!-- fourth slide -->
+       <div class="pre">
+       <img src="baby.png" alt="">
+       <h3>Pediatrics</h3>
+       <p>Specialized care for
+        <br>
+          infants & children.</p>
+          <a href="#">Learn More --- </a>
+      </div>
+    </div>
+</body>
+</html>

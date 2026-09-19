@@ -1,0 +1,397 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePlusHospital</title>
+    <link rel="icon" type="image/png" href="medical-symbol.png">
+
+</head>
+<style>
+    body
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    
+    }
+    section
+    {
+        display: flex;
+        background-color: rgba(0, 94, 255, 0.909);
+        gap: 300px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .number>a
+    {
+         text-decoration: none;
+         color: white;
+         margin-left: px;
+    }
+    .mail a
+    {
+         text-decoration: none;
+         color: white;
+         margin-left: 10px;
+    }
+    .emergency a
+    {
+         text-decoration: none;
+         color: white;
+         margin-left: 10px;
+         
+    }
+    .emergency a:hover
+    {
+        color: red;
+        text-shadow: 1px 1px 10px black;
+        transition: 1s;
+    }
+    .number img
+    {
+        width: 20px;
+       
+    }
+    .mail>img
+    {
+        width: 20px;
+    }
+    .emergency>img
+    {
+        width: 25px;
+        animation: ZoomIn 2s linear infinite;   
+    }
+    @keyframes ZoomIn
+    {
+       0%
+       {
+        transform: scale(1);
+       }
+       50%
+       {
+        transform: scale(1.5);
+       }
+       100%
+       {
+        transform: scale(1);
+       }
+    }
+    .emergency
+    {
+        display: flex;
+    }
+    .mail
+    {
+        display: flex;
+    }
+    
+    .number
+    {
+        display: flex;
+        margin-left: 30px;
+    }
+    nav
+    {
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+        transition: 1s;
+    }
+    nav a:hover
+    {
+        color: rgb(0, 145, 255);
+        transform: translateY(-10px);
+
+    }
+    .logo
+    {
+        display: flex;
+    }
+    .logo>h4
+    {
+        margin-top: 50px;
+        margin-left: -40px;
+    }
+    .logo>img
+    {
+        width: 100px;
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+    .text
+    {
+        margin-top: 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    nav h4
+    {
+        font-size: 25px;
+        margin-left: -60px;
+
+    }
+    .cont
+    {
+        margin-left: 20px;
+    }
+    .cont a
+    {
+        margin-left: 40px;
+        text-decoration: none;
+        color: black;
+    }
+    .cont button
+    {
+        margin-left: 800px;
+        padding: 10px;
+        border-radius: 10px;
+        border:none;
+        background-color: rgba(0, 106, 255, 0.731);
+        color: white;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .cont button:hover
+    {
+       box-shadow: 1px 1px 10px grey;
+       transform: translateY(-10px);
+    }
+    .container
+    {
+        background: linear-gradient(to right, white, blue);
+        padding: 20px;
+        width: 100%;
+        height: 70%;
+
+    }
+    .btn1
+    {
+        background-color: rgb(0, 140, 255);
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        transition: 1s;
+    }
+    .btn1:hover
+    {
+        box-shadow: 1px 1px 10px grey;
+        transform: translateY(-10px);
+        cursor: pointer;
+    }
+    .btn1>img
+    {
+        width: 20px;
+        height: 17px;
+        padding-right: 10px;
+    }
+    .btn2>img
+    {
+        width: 20px;
+        padding-right: 10px;
+    }
+    .btn2
+    {
+        
+        padding: 5px;
+        background-color: transparent;
+        border-style: solid;
+        border-color: rgb(0, 140, 255);
+        border-radius: 5px;
+        margin-top: 5px;
+        margin-left: 10px;
+        transition: 1s;
+    }
+    .btn2:hover
+    {
+        background-color: white;
+        box-shadow: 1px 1px 10px grey;
+        transform: translateY(-10px);
+        cursor: pointer;
+    }
+    .emergency2
+    {
+        display: flex;
+        margin-top: 10px;
+        border-color: rgb(0, 140, 255);
+        border-radius: 20px;
+        padding: 5px;
+        transition: 1s;
+        
+    }
+    .emergency2:hover
+    {
+        transform: translateY(-20px);
+        
+    }
+    .emergency2>p
+    {
+        margin-top: 50px;
+        margin-left: -130px;
+    }
+    .emergency2>img
+    {
+        width: 50px;
+        height: 70px;
+        margin-right: 10px;
+    }
+    .doctors>img
+    {
+        width: 70px;
+    }
+    .doctors
+    {
+        display: flex;
+        margin-top: -80px;
+        margin-left: 250px;
+        transition: 1s;
+        
+    }
+    .doctors:hover
+    {
+        transform: translateY(-20px);
+        
+    }
+    .doctors>p
+    {
+        margin-left: -120px;
+        margin-top: 40px;
+    }
+    .doctors>h3
+    {
+        margin-left: 10px;
+    }
+    .advance>img
+    {
+       width: 50px;
+       height: 50px;
+       margin-top: 10px;
+    }
+    .advance
+    {
+        display: flex;
+        transition: 1s;
+    }
+     .advance:hover
+     {
+        transform: translateY(-20px);
+     }
+    .advance>p
+    {
+        margin-left: -150px;
+        margin-top: 40px;
+    }
+    .advance>h3
+    {
+        margin-left: 5px;
+    }
+    .patient
+    {
+        display: flex;
+        margin-left: 250px;
+        margin-top: -60px;
+        transition: 1s;
+    }
+    .patient:hover
+    {
+        transform: translateY(-20px);
+    }
+    .patient>img
+    {
+        width: 50px;
+        height: 70px;
+    }
+    .patient>p
+    {
+        margin-left: -100px;
+        margin-top: 40px;
+    }
+    footer
+    {
+        background-color: rgb(0, 140, 255);
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    @media screen and (max-width:600px)
+    {
+       .number
+       {
+        width: 5px;
+        margin-left: -10px;
+        font-size: 10px;
+        
+       }   
+    }
+    
+</style>
+<body>
+    <section>
+        <div class="number">
+            <img src="icons8-phone-50.png" alt="">
+         <a href="#">+91 90250 04557</a>
+        </div>
+        <div class="mail">
+            <img src="icons8-mail-24.png" alt="">
+            <a href="#">CarePlusHospital@gmail.com</a>
+        </div>
+        <div class="emergency">
+            <img src="alarm.png" alt="">
+            <a href="appoinment.html">Emergency 24/7</a>
+        </div>
+    </section>
+    <nav>
+        <div class="logo">
+            <img src="medical-symbol.png" alt="">
+            <p class="text" style="color: rgb(6, 149, 144);">Care <span style="color: rgb(115, 255, 0);">Plus</span></p>
+            <h4>Hospital</h4>
+        </div>
+        <div class="cont">
+            <a href="#">Home</a>
+            <a href="department.html">Department</a>
+            <a href="#">Doctors</a>
+            <a href="appoinment.html">Appoinment</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="appoinment.html">
+            <button type="submit">Book Appoinment</button>
+            </a>
+        </div>
+    </nav>
+    <div class="container">
+      <p>YOUR HEALTH,OUR PRIORITY</p>
+      <h2>Compassionate Care <br>for a <span>Healtheir Life</span></h2>
+      <p>We provide advsnced medical care wth a personal touch
+        <br>Your well-being is at the heart of everrything we do. </p>
+        <a href="appoinment.html">
+        <button type="button" class="btn1"> <img src="icons8-business-64.png" alt=""
+         >Book Appoinment</button>
+         </a>
+        <button type="button" class="btn2"><img src="icons8-incoming-call-100.png" alt="">Contact us</button>
+        <div class="emergency2">
+            <img src="icons8-ambulance-32.png" alt="">
+            <h3>27/7 Emergency</h2>
+            <br>
+            <p>Always here for you</p>
+        </div>
+        <div class="Doctors">
+         <img src="doctor (1).png" alt="">
+         <h3>Export Doctors</h3>
+         <p>Experience specialist</p>
+        </div>
+        <div class="advance">
+            <img src="digitalization.png" alt="">
+            <h3>Advanced Technology</h3>
+            <p>modern medical care</p>
+        </div>
+        <div class="patient">
+            <img src="healthcare.png" alt="">
+            <h3>Patient first</h3>
+            <p>Care with compossition</p>
+
+        </div>
+    </div>
+    <footer>@Designed by sarath | care plus Hospital</footer>
+</body>
+</html>

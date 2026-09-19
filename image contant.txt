@@ -1,0 +1,32 @@
+images
+---------
+phone calls white
+mail white
+emergency alarm icon red
+symbol Hospital
+calenter icon white
+phone call icon blue
+emergrncy alarm icon 
+Docter icon
+advance technology icon
+care icon
+hospital image
+heart icon
+brain icon
+bon icon 
+baby icon
+ladie Docter image-2
+gens Docter image-2
+5-star icon
+happy icon white
+docter icon white
+Building icon white
+batch icon white
+contact icon black
+phone icon black
+department icon black
+docter icon black
+message icon black
+
+
+
